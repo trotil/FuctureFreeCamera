@@ -162,8 +162,10 @@ THREE.FuctureFreeCamera = function ( camera, domElement ) {
 		}
 		if( ffc.moveUp ){
 			ffc.freecam.translateOnAxis(vectorZ, ffc.speed);
+			hasMovement = true;
 		} else if( ffc.moveDown){
 			ffc.freecam.translateOnAxis(vectorZ, -ffc.speed);
+			hasMovement = true;
 		}
 		if(!hasMovement) {
 			decelerateMovement(vectorZ);
