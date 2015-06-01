@@ -16,9 +16,6 @@ http://fucture.org/fucturefreecamera/
 
 Simple initialization example
 
-(function(){
-		initThree();
-
 		function initThree(){
 			// initial variables
 			var geometry, renderer, controls, material, mesh;
@@ -59,4 +56,3 @@ Simple initialization example
 				renderer.render( scene, camera );
 			}
 		}
-	}());
